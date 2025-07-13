@@ -1,5 +1,7 @@
 # doggieOS
-A repository of tweaks and tools that I use on every arch linux install
+A repository of tweaks and tools that I use on every arch linux install.
+
+this project is basically just detailing everything I have done / want to do with my current system. As I hammer this out I will start writing scripts to automate my arch install / personal distro fully.
 
 # Initial Installation 
 -Arch.iso
@@ -50,3 +52,5 @@ set up virtual machines through qemu virt manager
 - debian
 - RHEL
 - Fedora
+
+set up snapper to work with btrfs to do bootable snapshots
