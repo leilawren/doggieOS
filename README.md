@@ -46,6 +46,8 @@ sudo pacman -S (decide on every single daily utility i like to use on linux and 
 
 command line flatpak install discord and other sandboxed apps
 
+set up snapper to work with btrfs to do bootable snapshots
+
 set up virtual machines through qemu virt manager
 - windows 11
 - macOS
