@@ -54,5 +54,3 @@ set up virtual machines through qemu virt manager
 - debian
 - RHEL
 - Fedora
-
-set up snapper to work with btrfs to do bootable snapshots
