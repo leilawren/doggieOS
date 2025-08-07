@@ -1,0 +1,5 @@
+#!/bin/sh
+# Xsetup - run as root before the login dialog appears
+# xrandr to configure sddm for multiple monitors
+xrandr --output DisplayPort-0 --auto
+xrandr --output DisplayPort-1 --off
