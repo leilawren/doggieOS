@@ -43,13 +43,15 @@ get a list of subvolumes: sudo btrfs subv list /
 
 OKAY so I tried this - This is still a work in progress
 
-I used timeshift to make snapshots and grub-btrfs to add them to grub. 
+I used timeshift to make snapshots and grub-btrfs to add them to grub.
 
 https://github.com/Antynea/grub-btrfs
 
-This works but i think i would prefer to use snapper instead of timeshit, and automate the process with a custom script.
+sudo /etc/grub.d/41_snapshots-btrfs && sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-When i booted from a snapshot I noticed that new packages and a test file in home was still there.
+This works but i think i would prefer to use snapper instead of timeshift, and automate the process with a custom script.
+
+When i booted from a snapshot i noticed that new packages and a test file in home was still there. I need to learn more about this.
 
 # SDDM / XRANDR
 
@@ -59,19 +61,15 @@ reboot again to test sddm/xrandr monitor script
 
 # THEMES
 
-papirus icons (in this repo)
+Just use the plasma store to grab these real quick
 
-carl look and feel global theme (in this repo)
+papirus icons
 
-pull wallpapers themes icons from a github to their respective directories
+carl look and feel global theme
 
-enable themes icons and wallpaper (in some sort of automated fashio preferably?) [side idea: write a color / theme changer script]
+wallpapers included in this repo
 
-sudo pacman -S (decide on every single daily utility i like to use on linux and install those here)
-
-command line flatpak install discord and other sandboxed apps
-
-set up snapper to work with btrfs to do bootable snapshots
+# VMs
 
 set up virtual machines through qemu virt manager
 - windows 11
