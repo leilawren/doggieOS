@@ -95,6 +95,8 @@ makepkg -si
 
 yay --verison
 
+install mullvad-vpn from the aur (be careful! lol)
+
 # FLATPAKS:
 
 I'm going to set up flatpaks for apps I don't trust or can't find elsewhere.
