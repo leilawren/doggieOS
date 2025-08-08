@@ -8,17 +8,15 @@ ARCHINSTALL
 
 Bootloader: grub
 
-Swap: true
+Swap: defaults
 
-Filesystem: btrfs USE SUBVOLUMES and select timeshift for snapshot tool
+Filesystem: btrfs USE SUBVOLUMES > Timeshift
 
 Kernels: Linux & Zen
 
 Audio: pipewire
 
 Network: NetworkManager
-
-Other Packages: micro
 
 # After Install - Base Install and My Apps
 update and fastfetch for the meme (it's not a computer unless i can run fastfetch)
