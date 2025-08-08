@@ -5,21 +5,38 @@ this project is basically just detailing everything I have done / want to do wit
 
 # ARCHINSTALL
 
-Bootloader: grub
+mirrors and repos: US
 
-Swap: defaults
+Disk Configuration > Use best-effort
+- would you like to use btrfs subvolumes with default structure? > Yes
+- would you like to use compression or disable COW? > Use Compression
+- BTRFS Snapshots > Timeshift
 
-Filesystem: btrfs > yes to use subvolumes > timeshift
+Bootloader > grub
 
-Kernels: Linux & Zen
+Swap > defaults / swap on zram enabled
 
-Audio: pipewire
+Hostname > doggie
 
-Network: NetworkManager
+Authentication > add root password and a user account with sudo privileges
+
+Profile > leave blank
+
+Applications >
+-bluetooth: whatever
+-audio: pipewire
+
+Kernels > linux & linux zen
+
+Network configuration > Use NetworkManager
+
+No additional packages
+
+Timezone > Arizona
+
+NTP > Enabled
 
 # BASE INSTALL AND MY APPS
-
-update and fastfetch for the meme (it's not a computer unless i can run fastfetch)
 
 sudo pacman -Syu fastfetch
 
