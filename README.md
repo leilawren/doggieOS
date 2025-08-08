@@ -52,29 +52,24 @@ reboot
 
 run timeshift setup wizard
 
-sudo pacman -S grub-btrfs inotify-tools vi
+sudo pacman -S grub-btrfs inotify-tools
 
 sudo EDITOR=micro systemctl edit --full grub-btrfsd
 
-change the ExecStart= line to the following: ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
+change the ExecStart= line to the following: 
+- ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
 
-get a list of subvolumes: sudo btrfs subv list /
+sudo systemctl enable grub-btrfs
 
-OKAY so I tried this - This is still a work in progress
+reboot
 
-I used timeshift to make snapshots and grub-btrfs to add them to grub.
+sudo journalctl -f
 
-https://github.com/Antynea/grub-btrfs
+open timeshift and make a snapshot
 
-sudo /etc/grub.d/41_snapshots-btrfs
+check journalctl to see if it worked
 
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-
-When i booted from a snapshot i noticed that new packages and a test file in home was still there. I need to learn more about this. Maybe that's not how timeshift if supposed to work. Maybe i should be using a backup script to backup my home directory periodically?
-
-Check out this video and copy that setup (or similar)
-
-https://www.youtube.com/watch?v=V1wxgWU0j0E&t=97s
+reboot again to check the grub entries
 
 # SDDM / XRANDR
 
