@@ -23,8 +23,8 @@ Authentication > add root password and a user account with sudo privileges
 Profile > leave blank
 
 Applications >
--bluetooth: whatever
--audio: pipewire
+- bluetooth: whatever
+- audio: pipewire
 
 Kernels > linux & linux zen
 
