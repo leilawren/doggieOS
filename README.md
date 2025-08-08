@@ -50,6 +50,14 @@ reboot
 
 # BTRFS SNAPSHOTS
 
+run timeshift setup wizard
+
+sudo pacman -S grub-btrfs inotify-tools vi
+
+sudo EDITOR=micro systemctl edit --full grub-btrfsd
+
+change the ExecStart= line to the following: ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
+
 get a list of subvolumes: sudo btrfs subv list /
 
 OKAY so I tried this - This is still a work in progress
