@@ -39,13 +39,17 @@ reboot
 
 # BTRFS SNAPSHOTS
 
-get a list of subvolumes
+get a list of subvolumes: sudo btrfs subv list /
 
-sudo btrfs subv list /
+OKAY so I tried this - This is still a work in progress
 
-Boot up timeshift and make a test snapshot
+I used timeshift to make snapshots and grub-btrfs to add them to grub. 
 
-Reboot and attempt to boot from snapshot
+https://github.com/Antynea/grub-btrfs
+
+This works but i think i would prefer to use snapper instead of timeshit, and automate the process with a custom script.
+
+When i booted from a snapshot I noticed that new packages and a test file in home was still there.
 
 # SDDM / XRANDR
 
