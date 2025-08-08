@@ -57,9 +57,35 @@ xrandr monitor starup script for login (in this repo)
 
 reboot again to test sddm/xrandr monitor script
 
-# FLATPAKS AND YAY
+# YAY
 
-I'm going to set up flatpaks for apps I don't trust or can't find elsewhere, and I'm going to set up yay although I intend on avoiding the AUR as much as possible with all the malware going around.
+I'm going to set up yay although I intend on avoiding the AUR as much as possible with all the malware going around.
+
+YAY:
+
+sudo pacman -Syu
+
+sudo pacman -S --needed base-devel git
+
+git clone https://aur.archlinux.org/yay.git
+
+cd yay
+
+makepkg -si
+
+yay --verison
+
+# FLATPAKS:
+
+I'm going to set up flatpaks for apps I don't trust or can't find elsewhere.
+
+sudo pacman -S flatpak
+
+reboot
+
+flatpak install flathub com.discordapp.Discord
+
+flatpak install flathub com.vscodium.codium
 
 # THEMES
 
