@@ -4,16 +4,15 @@ A repository of tweaks and tools that I use on every arch linux install.
 this project is basically just detailing everything I have done / want to do with my current system. As I hammer this out I will start writing scripts to automate my arch install / personal distro fully.
 
 # Initial Installation 
--Arch.iso
--archinstall
+ARCHINSTALL
 
 Bootloader: grub
 
 Swap: true
 
-Filesystem: btrfs
+Filesystem: btrfs USE SUBVOLUMES and select timeshift for snapshot tool
 
-Kernels: Linux & Zen & TKG
+Kernels: Linux & Zen
 
 Audio: pipewire
 
@@ -22,21 +21,43 @@ Network: NetworkManager
 Other Packages: micro
 
 # After Install
-ensure I have proper sudo permissions
+update and fastfetch for the meme (it's not a computer unless i can run fastfetch)
 
 sudo pacman -Syu fastfetch
 
-sudo pacman -S xorg plasma sddm firefox konsole
+this will also verify that i have proper sudo permissions
+
+# Base Install and Dependencies
+
+sudo pacman -S micro xorg plasma-x11-session plasma sddm firefox chromium konsole dolphin kdeconnect kate keepassxc amdgpu_top spectacle ark libreoffice-still gwenview gimp vlc handbrake kdenlive reaper signal-desktop
+
+I can just select defaults for all these and everything should install how i want.
 
 sudo systemctl enable sddm.service
 
 reboot
 
-xrandr monitor starup script for login (i have this saved somewhere)
+# BTRFS SNAPSHOTS
 
-if there is some pure wayland version of this that I can use I would prefer that at this point
+get a list of subvolumes
 
-reboot again to test monitor script
+sudo btrfs subv list /
+
+Boot up timeshift and make a test snapshot
+
+Reboot and attempt to boot from snapshot
+
+# SDDM / XRANDR
+
+xrandr monitor starup script for login (in this repo)
+
+reboot again to test sddm/xrandr monitor script
+
+# THEMES
+
+papirus icons (in this repo)
+
+carl look and feel global theme (in this repo)
 
 pull wallpapers themes icons from a github to their respective directories
 
@@ -50,7 +71,3 @@ set up snapper to work with btrfs to do bootable snapshots
 
 set up virtual machines through qemu virt manager
 - windows 11
-- macOS
-- debian
-- RHEL
-- Fedora
