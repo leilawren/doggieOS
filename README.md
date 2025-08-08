@@ -32,7 +32,7 @@ Network configuration > Use NetworkManager
 
 No additional packages
 
-Timezone > Arizona
+Timezone > US/Arizona
 
 NTP > Enabled
 
