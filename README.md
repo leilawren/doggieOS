@@ -20,14 +20,12 @@ Network: NetworkManager
 
 Other Packages: micro
 
-# After Install
+# After Install - Base Install and My Apps
 update and fastfetch for the meme (it's not a computer unless i can run fastfetch)
 
 sudo pacman -Syu fastfetch
 
 this will also verify that i have proper sudo permissions
-
-# Base Install and Dependencies
 
 sudo pacman -S micro xorg plasma-x11-session plasma sddm firefox chromium konsole dolphin kdeconnect kate keepassxc amdgpu_top spectacle ark libreoffice-still gwenview gimp vlc handbrake kdenlive reaper signal-desktop
 
