@@ -119,6 +119,13 @@ carl look and feel global theme
 
 wallpapers included in this repo
 
+# FSTAB
+
+in this repo - mount ur drives up
+
+# AMD DRIVERS
+
+
 # VMs
 
 set up virtual machines through qemu virt manager
