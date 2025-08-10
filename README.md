@@ -125,6 +125,11 @@ in this repo - mount ur drives up
 
 # AMD DRIVERS
 
+go and uncomment multilib repos in /etc/pacman.conf
+
+pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
+
+then install steam thru pacman and mind the driver selection to match the above
 
 # VMs
 
